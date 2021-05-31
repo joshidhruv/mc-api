@@ -24,7 +24,8 @@ default: &default
 development:
   <<: *default
   database: merchant_candy_api_development
-
+  user: postgres
+  password: 12345
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
@@ -58,7 +59,8 @@ development:
 test:
   <<: *default
   database: merchant_candy_api_test
-
+  user: postgres
+  password: 12345
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
 # ever seen by anyone, they now have access to your database.
@@ -80,7 +82,10 @@ test:
 # for a full overview on how database connection configuration can be specified.
 #
 production:
-  <<: *default
-  database: merchant_candy_api_production
-  username: merchant_candy_api
-  password: <%= ENV['MERCHANT_CANDY_API_DATABASE_PASSWORD'] %>
+  # <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
+# production:
+#   <<: *default
+#   database: merchant_candy_api_production
+#   username: merchant_candy_api
+#   password: <%= ENV['MERCHANT_CANDY_API_DATABASE_PASSWORD'] %>

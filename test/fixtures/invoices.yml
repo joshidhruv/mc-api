@@ -1,0 +1,33 @@
+# == Schema Information
+#
+# Table name: invoices
+#
+#  id           :uuid             not null, primary key
+#  identifier   :string
+#  currency     :integer
+#  memo         :string
+#  due_date     :datetime
+#  open_balance :bigint
+#  amount       :bigint
+#  created_at   :datetime         not null
+#  updated_at   :datetime         not null
+#  sender       :json
+#  recipient    :json
+#  deleted_at   :datetime
+#
+
+one:
+  identifier: MyString
+  currency: 1
+  memo: MyString
+  due_date: 2021-05-24 12:14:48
+  open_balance: 
+  amount: 
+
+two:
+  identifier: MyString
+  currency: 1
+  memo: MyString
+  due_date: 2021-05-24 12:14:48
+  open_balance: 
+  amount: 
