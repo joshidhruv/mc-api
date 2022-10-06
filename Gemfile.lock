@@ -79,8 +79,8 @@ GEM
     acts_as_paranoid (0.6.3)
       activerecord (>= 4.2, < 7.0)
       activesupport (>= 4.2, < 7.0)
-    addressable (2.7.0)
-      public_suffix (>= 2.0.2, < 5.0)
+    addressable (2.8.1)
+      public_suffix (>= 2.0.2, < 6.0)
     annotate (3.1.1)
       activerecord (>= 3.2, < 7.0)
       rake (>= 10.4, < 14.0)
@@ -191,13 +191,15 @@ GEM
     nio4r (2.5.7)
     nokogiri (1.11.5-x86_64-darwin)
       racc (~> 1.4)
+    nokogiri (1.11.5-x86_64-linux)
+      racc (~> 1.4)
     pager_api (0.3.2)
     pagy (3.13.0)
     pg (1.2.3)
     pry (0.14.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
-    public_suffix (4.0.6)
+    public_suffix (5.0.0)
     puma (4.3.8)
       nio4r (~> 2.0)
     pundit (2.1.0)
@@ -280,6 +282,7 @@ GEM
 
 PLATFORMS
   x86_64-darwin-19
+  x86_64-linux
 
 DEPENDENCIES
   active_model_serializers
